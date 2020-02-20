@@ -46,7 +46,7 @@ color:white;
 
 
 const Fact = props =>{
-  console.log('from List Fact Function', props)
+  console.log("fact", props)
   return(
     <div>
     
@@ -61,6 +61,7 @@ const Fact = props =>{
         <Card>
         {props.fact && !props.isFetchingData && <Text>{props.fact.text}</Text>}
         </Card>
+        {props.error && <p>{props.error}</p>}yarn
       
     </div>
   )
